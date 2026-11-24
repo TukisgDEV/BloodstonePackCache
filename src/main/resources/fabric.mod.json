@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "bloodstone_pack_cache",
+  "version": "${version}",
+  "name": "BloodStone Pack Cache",
+  "description": "Загружает известные ресурспаки BloodStone при запуске Minecraft и повторно использует их на сервере.",
+  "authors": ["TukisgDev"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.tukisg.packcache.BloodStonePackCache"]
+  },
+  "mixins": ["bloodstone-pack-cache.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25"
+  }
+}

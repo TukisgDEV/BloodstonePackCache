@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "dev.tukisg.packcache.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": ["DownloadedPackSourceMixin", "PackAccessor", "FileResourcesSupplierAccessor", "ConnectScreenMixin", "MinecraftMixin", "HandshakeMixin", "PackRepositoryMixin"],
+  "injectors": {"defaultRequire": 1}
+}
