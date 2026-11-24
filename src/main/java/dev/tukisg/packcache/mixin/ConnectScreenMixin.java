@@ -24,7 +24,7 @@ public abstract class ConnectScreenMixin {
         if (startup != null && startup.connectTo(server.ip)) {
             callback.cancel();
             client.reloadResourcePacks().thenRunAsync(() -> {
-                if (client.gui.screen() == (Object) this) connect(client, address, server, transfer);
+                if (client.screen == (Object) this) connect(client, address, server, transfer);
             }, client);
         }
     }

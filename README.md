@@ -1,12 +1,12 @@
 # BloodStone Pack Cache
 
-Клиентский Fabric-мод для Minecraft 26.3. Предварительно загружает ресурспаки BloodStone и сохраняет их в кэше.
+Клиентский Fabric-мод для Minecraft 1.21.11. Предварительно загружает ресурспаки BloodStone и сохраняет их в кэше.
 
 ## Установка
 
-Нужны Minecraft 26.3, Fabric Loader 0.20.1 или новее и Java 25. Поместите JAR в папку `mods` и перезапустите игру. Fabric API не требуется.
+Нужны Minecraft 1.21.11, Fabric Loader 0.19.3 или новее и Java 21. Поместите JAR в папку `mods` и перезапустите игру. Fabric API не требуется.
 
-Для Minecraft 1.21.11 используйте ветку [`1.21.11`](../../tree/1.21.11).
+Версия для Minecraft 26.3 находится в ветке [`main`](../../tree/main).
 
 ## Настройки
 
@@ -16,6 +16,6 @@
 
 ## Сборка
 
-Нужна JDK 25. В корне проекта выполните `./gradlew build` или `gradlew.bat build` в Windows. Готовый JAR находится в `build/libs`.
+Нужна JDK 21 или новее. В корне проекта выполните `./gradlew build` или `gradlew.bat build` в Windows. Готовый JAR находится в `build/libs`.
 
 Автор: TukisgDev.

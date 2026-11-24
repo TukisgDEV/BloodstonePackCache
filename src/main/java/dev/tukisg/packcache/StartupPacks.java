@@ -185,7 +185,7 @@ public final class StartupPacks {
 
     public boolean resourcesAlreadyApplied(Minecraft client) {
         if (!active || !initialized || preloaded.isEmpty() || disabledAfterFailure || !client.isGameLoadFinished()
-                || client.gui.overlay() != null) return false;
+                || client.getOverlay() != null) return false;
         client.getResourcePackRepository().reload();
         List<String> expected = client.getResourcePackRepository().getSelectedPacks().stream().map(Pack::getId).toList();
         boolean unchanged = appliedPacks.matches(expected);
@@ -216,8 +216,8 @@ public final class StartupPacks {
     }
 
     public void menuTick(Minecraft client) {
-        if (client.level == null && (client.gui.screen() instanceof net.minecraft.client.gui.screens.TitleScreen
-                || client.gui.screen() instanceof net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen)) {
+        if (client.level == null && (client.screen instanceof net.minecraft.client.gui.screens.TitleScreen
+                || client.screen instanceof net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen)) {
             connectedHost = null;
             if (setActive(true)) client.reloadResourcePacks();
         }
